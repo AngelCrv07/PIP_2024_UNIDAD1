@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="recursos">
+    <file>Imagenes/LogoEquipo.jpeg</file>
+    <file>Imagenes/LogoFIT.png</file>
+    <file>Imagenes/LogoUAT.png</file>
+    <file>Imagenes/HORARIO.png</file>
+  </qresource>
+</RCC>
