@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic, QtWidgets
-qtCreatorFile = "P2_SeleccionEquipo.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P7_CambiarColor.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -11,52 +11,48 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         # Área de los Signals
-        #self.txt_equipo.setPlainText ("hola \n mundo")
-        #self.cb_angel.clicked.connect(self.sel_angel)
-        self.cb_angel.toggled.connect(self.sel_angel)
-        self.cb_jorge.toggled.connect(self.sel_jorge)
-        self.cb_paniagua.toggled.connect(self.sel_paniagua)
-        self.cb_sheko.toggled.connect(self.sel_sheko)
+        self.valorR.setMinimum(0)
+        self.valorR.setMaximum(255)
+        self.valorR.setSingleStep(1)
+        self.valorR.setValue(0)
+        self.valorR.valueChanged.connect(self.cambiaR)
 
-        self.f = ""
-        self.g = ""
-        self.h = ""
+        self.valorG.setMinimum(0)
+        self.valorG.setMaximum(255)
+        self.valorG.setSingleStep(1)
+        self.valorG.setValue(0)
+        self.valorG.valueChanged.connect(self.cambiaG)
 
+        self.valorB.setMinimum(0)
+        self.valorB.setMaximum(255)
+        self.valorB.setSingleStep(1)
+        self.valorB.setValue(0)
+        self.valorB.valueChanged.connect(self.cambiaB)
+
+        self.R = 0
+        self.G = 0
+        self.B = 0
 
     # Área de los Slots
+    def cambiaR(self):
+        self.R = self.valorR.value()
+        estilo = ("background-color: rgb(" + str(self.R) +
+                  "," + str(self.G) + "," + str(self.B) + ");")
+        self.colorburguer.setStyleSheet(estilo)
 
-    def sel_angel(self):
-        if self.cb_angel.isChecked():
-            print ("angel true")
-            self.angel = "angel\n"
-        else:
-            print ("angel False")
-            self.angel = ""
-        self.txt_equipo.setPlainText(self.angel + self.jorge + self.paniagua + self.sheko )
-    def sel_jorge(self):
-        if self.cb_jorge.isChecked():
-            print("jorge true")
-            self.jorge = "jorge\n"
-        else:
-            print("jorge False")
-            self.jorge = ""
-        self.txt_equipo.setPlainText(self.angel + self.jorge + self.paniagua + self.sheko)
-    def sel_paniagua(self):
-        if self.cb_paniagua.isChecked():
-            print("paniagua true")
-            self.paniagua = "paniagua\n"
-        else:
-            print("paniagua False")
-            self.paniagua = ""
-        self.txt_equipo.setPlainText(self.angel + self.jorge + self.paniagua + self.sheko)
-    def sel_sheko(self):
-        if self.cb_sheko.isChecked():
-            print("sheko true")
-            self.sheko = "sheko\n"
-        else:
-            print("sheko False")
-            self.sheko = ""
-        self.txt_equipo.setPlainText(self.angel + self.jorge + self.paniagua + self.sheko)
+
+    def cambiaG(self):
+        self.G = self.valorG.value()
+        estilo = ("background-color: rgb(" + str(self.R) +
+                  "," + str(self.G) + "," + str(self.B) + ");")
+        self.colorburguer.setStyleSheet(estilo)
+
+    def cambiaB(self):
+        self.B = self.valorB.value()
+        estilo = ("background-color: rgb("+ str(self.R) +
+                  "," + str(self.G) + "," + str(self.B) + ");")
+        self.colorburguer.setStyleSheet(estilo)
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

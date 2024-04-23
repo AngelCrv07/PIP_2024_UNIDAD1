@@ -31,7 +31,7 @@ background-color: rgb(115, 76, 115);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/LogoUAT.png</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/LogoUAT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -50,7 +50,7 @@ background-color: rgb(115, 76, 115);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/LogoFIT.png</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/LogoFIT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -69,7 +69,7 @@ background-color: rgb(115, 76, 115);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/LogoEquipo.jpeg</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/LogoEquipo.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -88,13 +88,13 @@ background-color: rgb(115, 76, 115);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/Angel.jpeg</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/Jorge.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
+   <widget class="QSlider" name="hs_integrantes">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -141,7 +141,7 @@ background-color: rgb(115, 76, 115);</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../Imagenes/recursos.qrc"/>
+  <include location="../Imagenes/recursos1.qrc"/>
   <include location="../Imagenes/recursos1.qrc"/>
  </resources>
  <connections/>

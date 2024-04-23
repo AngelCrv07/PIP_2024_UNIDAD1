@@ -30,7 +30,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/LogoUAT.png</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/LogoUAT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -49,7 +49,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/LogoFIT.png</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/LogoFIT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -68,7 +68,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/LogoEquipo.jpeg</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/LogoEquipo.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -87,7 +87,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Imagenes/recursos1.qrc">:/LOGOS/Jorge.png</pixmap>
+     <pixmap resource="../Imagenes/recursos1.qrc">:/logos/Jorge.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -141,6 +141,7 @@
  </widget>
  <resources>
   <include location="../Imagenes/recursos1.qrc"/>
+  <include location="../logos/recursos1.qrc"/>
  </resources>
  <connections/>
 </ui>

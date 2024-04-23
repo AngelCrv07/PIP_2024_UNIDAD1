@@ -1,5 +1,6 @@
 <RCC>
-  <qresource prefix="LOGOS">
+  <qresource prefix="logos">
+    <file>recursos1.qrc</file>
     <file>Angel.jpeg</file>
     <file>Jorge.png</file>
     <file>LogoEquipo.jpeg</file>

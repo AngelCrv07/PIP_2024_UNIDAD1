@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic, QtWidgets, QtGui
-qtCreatorFile = "P5_VertcialSlider.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P5_VerticalSlider.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -12,26 +12,24 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # Área de los Signals
         self.datos_integrantes = {
-            1: ["Angel", "Futbol", 20, "O+", ":/LOGOS/Angel.jpeg"],
-            2: ["Jorge", "Juegos", 20, "O+", ":/LOGOS/Jorge.png"],
-            3: ["Paniagua", "Chambear", 20, "O+", ":/LOGOS/Paniagua.jpeg"],
-            4: ["Sheko", "Gym", 22, "O+", ":/LOGOS/Sheko.jpeg"]
+            1: ["Angel", "Futbol", 20, "O+", ":/logos/Angel.jpeg"],
+            2: ["Jorge", "Juegos", 20, "O+", ":/logos/Jorge.png"],
+            3: ["Paniagua", "Chambear", 20, "O+", ":/logos/Paniagua.jpeg"],
+            4: ["Sheko", "Gym", 22, "O+", ":/logos/Sheko.jpeg"]
         }
 
-        self.img_persona.setMinium = (1)
-        self.img_persona.setMaxium = (4)
-        self.img_persona.setStep = (1)
-        self.img_persona.setValue = (1)
-        self.img_persona.valueChanged.connect(self.cambia)
+        self.vs_integrantes.setMinimum(1)
+        self.vs_integrantes.setMaximum(4)
+        self.vs_integrantes.setSingleStep(1)
+        self.vs_integrantes.setValue(1)
+        self.vs_integrantes.valueChanged.connect(self.cambia)
 
-        def cambia(self):
-            print("Text: " + self.combo_persona.currentIndexText())
-            print("Index: " + str(self.combo_persona.currentIndexIndex()))
-            print("Data: " + str(self.combo_persona.currentIndexData()))
+    def cambia(self):
+        dataClave = self.vs_integrantes.value()
+        print(dataClave)
+        imagen = self.datos_integrantes[dataClave][-1]
+        self.img_persona.setPixmap(QtGui.QPixmap(imagen))
 
-            dataClave = self.combo_persona.currentData()
-            imagen = self.datos_persona[dataClave][-1]
-            self.img_persona.setPixmap(QtGui.QPixmap(imagen))
 
     # Área de los Slots
 
