@@ -1,4 +1,5 @@
-//initializing LED 
+/d loop()
+{/initializing LED
 int led_pin= 6;
 
 void setup()
@@ -7,8 +8,7 @@ void setup()
   pinMode(led_pin, OUTPUT);
 }
 
-void loop()
-{
+voi
   //Fading the LED
   for(int i=0; i<255; i++){
   analogWrite(led_pin, i);

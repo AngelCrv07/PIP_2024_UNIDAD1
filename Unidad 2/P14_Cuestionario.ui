@@ -84,7 +84,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>EQUIPO1</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="radioButton_2">
@@ -97,7 +97,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>EQUIPO2</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="radioButton_3">
@@ -110,7 +110,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>EQUIPO3</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
@@ -123,7 +123,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>EQUIPO1</string>
     </property>
     <widget class="QRadioButton" name="radioButton_4">
      <property name="geometry">
@@ -135,7 +135,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RadioButton</string>
+      <string>ANGEL</string>
      </property>
     </widget>
     <widget class="QRadioButton" name="radioButton_5">
@@ -148,7 +148,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RadioButton</string>
+      <string>JORGE</string>
      </property>
     </widget>
     <widget class="QRadioButton" name="radioButton_6">
@@ -161,7 +161,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RadioButton</string>
+      <string>SERGIO</string>
      </property>
     </widget>
    </widget>
@@ -175,7 +175,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>EQUIPO2</string>
     </property>
     <widget class="QRadioButton" name="radioButton_10">
      <property name="geometry">
@@ -187,7 +187,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RadioButton</string>
+      <string>PANIAGUA</string>
      </property>
     </widget>
     <widget class="QRadioButton" name="radioButton_11">
@@ -200,7 +200,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RadioButton</string>
+      <string>ISSAC</string>
      </property>
     </widget>
     <widget class="QRadioButton" name="radioButton_12">
@@ -213,7 +213,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RadioButton</string>
+      <string>EMANUEL</string>
      </property>
     </widget>
    </widget>
@@ -227,7 +227,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>EQUIPO5</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="radioButton_14">
@@ -240,7 +240,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>EQUIPO4</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="radioButton_15">
@@ -253,7 +253,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>EQUIPO6</string>
     </property>
    </widget>
   </widget>
