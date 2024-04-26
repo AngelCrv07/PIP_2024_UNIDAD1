@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="Logos">
+    <file>LogoEquipo.jpeg</file>
+    <file>LogoFIT.png</file>
+    <file>LogoUAT.png</file>
+  </qresource>
+</RCC>

@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <math.h>
 
 double x1, y1, x2, y2, distancia;
@@ -22,5 +23,6 @@ void loop() {
   
   distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
   
-  Serial.println("La distancia entre los dos puntos es: " + String(distancia));
+  Serial.print("La distancia entre los dos puntos es: ");
+  Serial.println(distancia);
 }
