@@ -1,5 +1,5 @@
-int Pin_echo = 13;
-int Pin_trig = 12;
+int Pin_echo = 9;
+int Pin_trig = 8;
 
 void setup() {
   // put your setup code here, to run once:
@@ -24,7 +24,7 @@ void loop() {
 
   Serial.println("Distancia:" + String (cm) + "cm.");
 
-  dealy(100);
+  delay(100);
 
 
 }

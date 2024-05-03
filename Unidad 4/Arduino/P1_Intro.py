@@ -1,5 +1,6 @@
 import serial
 import sys
+import serial.tools.list_ports
 from PyQt5 import uic, QtWidgets, QtGui
 qtCreatorFile = "P1_Intro.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
@@ -29,6 +30,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.arduino.open()
             self.btn_accion.setText("DESCONECTAR")
 
+        if self.arduino.is_open:
+            self.txt_estado.setText("Conectado")
+        else:
+            self.txt_estado.setText("Desconectado")
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     window = MyApp()

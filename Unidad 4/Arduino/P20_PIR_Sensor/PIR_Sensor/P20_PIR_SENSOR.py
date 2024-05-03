@@ -1,7 +1,7 @@
 import serial
 import sys
 from PyQt5 import uic, QtWidgets, QtGui, QtCore
-qtCreatorFile = "P19_LDR.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P20_PIR.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -66,4 +66,3 @@ if __name__ == "__main__":
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
-

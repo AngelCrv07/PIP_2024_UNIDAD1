@@ -21,7 +21,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   valor = analogRead(lm35); //0 - 1023
   Serial.print("valor leido:" + String(valor));
-  valor = (5.0 * valor * 100.0 )/1023.0 // C*
+  valor = (5.0 * valor * 100.0 )/1023.0; // C*
   Serial.println("Temp: " + String (valor));
   delay(300);
 

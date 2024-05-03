@@ -7,6 +7,7 @@
 
 int potenciomentro = A0; //pin analogico A0
 
+int val = 0;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -20,10 +21,10 @@ void setup() {
 //GND    A#     5V
 //       A0
 
-int valor;
+
 void loop() {
   // put your main code here, to run repeatedly:
-  valor = analogRead(potenciomentro);
-  Serial.println(valor);
-  delay(100);
+  val = analogRead(potenciomentro);
+  Serial.println(val);
+  delay(70);
 }
